@@ -45,6 +45,7 @@ jobs:
         input_path: cfn
         extra_args: --fail-on-warnings --deny-list-path .cfnnagcfg.yml
 
+
     - name: Fail if cfn_nag scan contains failures, warnings
       # sum cfn_nag failures, warnigns and return it as exit code
       run: |
